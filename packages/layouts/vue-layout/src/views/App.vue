@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import pubsub from 'pubsub-js';
+import pubsub from 'event-emitter';
 import { ref } from 'vue';
 
 const data = ref<string>('');

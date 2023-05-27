@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
-import pubsub from 'pubsub-js';
+// dependency coming from local packages (packages/utils/event-emitter)
+import pubsub from 'event-emitter';
 
 // VueLayout component in Vue
 import VueComponent from 'vue-layout';
@@ -13,6 +14,7 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
   const [globalMessage, setGlobalMessage] = useState("");
+  const vueComponentInstance = useRef<typeof VueComponent | null>(null);
 
 
   useEffect(() => {
@@ -21,11 +23,11 @@ function App() {
       setGlobalMessage(data);
     });
 
-    VueComponent();
+    vueComponentInstance.current = VueComponent();
 
     return () => {
-      console.log("UNMOUNTED")
       pubsub.unsubscribe('global');
+      vueComponentInstance.current?.unmount();
     }
   }, [])
 

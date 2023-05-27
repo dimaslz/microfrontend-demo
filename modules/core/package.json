@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 4002",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "event-emitter": "./packages/utils/event-emitter",
     "vue-layout": "*",
     "mitt": "^3.0.0",
     "pubsub-js": "^1.9.4",
