@@ -1839,6 +1839,11 @@ vite@^4.3.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
+vue-layout@*:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/vue-layout/-/vue-layout-0.0.0.tgz#94083d4b5078362ebe4d230e88293e79097332cd"
+  integrity sha512-r4GpQOCrbH4q4GddiSa/LUjpMHj21Pn+6Ca+lLYvajayUhyMIB88ZEjBDgVK8lCm1FU/1ox69YvCJ2ON5sdSsQ==
+
 which@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
