@@ -5,15 +5,22 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "lerna": "lerna",
-    "core:dev": "lerna run dev --scope=core"
+    "build:packages": "sh ./sh/build-packages.sh",
+    "build:modules": "sh ./sh/build-modules.sh",
+    "setup": "sh ./sh/setup.sh",
+    "reset": "sh ./sh/reset.sh",
+    "dev:module:vue-page": "yarn --cwd=./modules/page-in-vue dev",
+    "dev:module:code": "yarn --cwd=./modules/core dev",
+    "lerna": "lerna"
   },
   "author": "",
   "license": "ISC",
   "workspaces": [
     "modules/*",
     "packages/*",
-    "packages/layouts/*"
+    "packages/components/*",
+    "packages/layouts/*",
+    "packages/utils/*"
   ],
   "devDependencies": {
     "lerna": "^6.4.1"

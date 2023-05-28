@@ -18,6 +18,26 @@ Frameworks
 * Svelte
 * Angular
 
+## How it works
+
+For sure, this is not the best solution to manage a project. I am doing everything in the same repository just for simplify to do not create a lot of repositories. Some parts should be in other repos or maybe, is a good idea to keep all in the same repo but, we should have a good deployment strategy but, that is other story.
+
+### Main commands
+
+* `yarn buid:packages`: Build all packages
+* `yarn buid:modules`: Build all modules
+* `yarn setup`: Install all packages in all repos (modules and packages)
+* `yarn reset`: Remove all `node_modules` in all repos (modules and packages)
+
+If you want to run the project first time, I recommend to run:
+
+* `yarn build:packages && yarn build:modules`
+* `yarn dev:module:vue-page`: Module in [http://localhost:2000/vue](http://localhost:2000/vue)
+* `yarn dev:module:core`: Module in [http://localhost:4002](http://localhost:4002)
+
+You should see the following page:
+![alt text](/application-screenshot.png)
+
 ## Folder Structure
 
 ```bash

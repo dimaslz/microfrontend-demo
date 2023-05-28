@@ -7,7 +7,7 @@
   "module": "dist/vue-layout.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 2000",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
