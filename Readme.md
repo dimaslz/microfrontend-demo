@@ -36,7 +36,7 @@ If you want to run the project first time, I recommend to run:
 * `yarn dev:module:core`: Module in [http://localhost:4002](http://localhost:4002)
 
 You should see the following page:
-![alt text](/application-screenshot.png)
+![Application screenshot](/application-screenshot.png)
 
 ## Folder Structure
 
@@ -65,19 +65,19 @@ yarn.lock
 
 ## Application idea
 
-![alt text](/micro-frontend-demo.png)
+![Application idea to get](/micro-frontend-demo.png)
 
 ## Author
 
 ```json
 {
-  name: "Dimas López",
-  role: "FullStack Software Engineer",
-  alias: "dimaslz",
-  twitter: "https://twitter.com/dimaslz",
-  site: "https://dimaslz.dev",
-  linkedin: "https://www.linkedin.com/in/dimaslopezzurita",
-  tags: "react, vue, angular, nodejs, mongodb, bootstraping"
+  "name": "Dimas López",
+  "role": "FullStack Software Engineer",
+  "alias": "dimaslz",
+  "twitter": "https://twitter.com/dimaslz",
+  "site": "https://dimaslz.dev",
+  "linkedin": "https://www.linkedin.com/in/dimaslopezzurita",
+  "tags": "react, vue, angular, nodejs, mongodb, bootstraping"
 }
 ```
 
